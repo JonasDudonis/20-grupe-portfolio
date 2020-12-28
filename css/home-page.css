@@ -1,0 +1,17 @@
+/* reset, main */
+@import './components/reset.css';
+@import './components/variables.css';
+
+/* 3rd party */
+/* pasidometi kas yra bootstrap https://getbootstrap.com/docs/4.0/layout/grid/ */
+@import './components/bootsrap-grid.min.css';
+
+/* components */
+
+@import './components/header.css';
+
+/* custom: home page sections */
+
+/* header */
+/* hero */
+/* services */
