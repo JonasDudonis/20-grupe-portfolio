@@ -18,3 +18,9 @@ Browser -> Node
 1b) npm init -y
 2b) npm i -D [package-name]
 3a) npm run dev
+
+// Clean cache (jeigu meta error atsidarant repositorija)
+
+1) npm cache clean --force
+2) rm -rf node_modules package-lock.json
+3) npm install
