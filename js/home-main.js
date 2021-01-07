@@ -1,11 +1,13 @@
 // ALL IMPORT
 
 /* header  */
-import { Menu } from './components/menu/menuData.js'
-import { Menu } from './components/menu/Menu.js'
+import { Menu } from './components/menu/Menu.js';
+import { menuData } from './data/menuData.js';
 /* hero  */
 /* about  */
 /* hobbies  */
+import { renderHobbies } from './components/hobbies/renderHobbies.js';
+import { hobbiesData } from './data/hobbiesData.js';
 /* achievements  */
 /* services  */
 /* job history  */
@@ -21,10 +23,21 @@ import { Menu } from './components/menu/Menu.js'
 // CODE EXECUTION
 
 /* header  */
+const menu = new Menu(menuData);
+menu.init();
+
 /* hero  */
 /* about  */
 /* hobbies  */
+renderHobbies({
+    selector: '#hobbies_block',
+    data: hobbiesData,
+    limit: 12
+});
+
 /* achievements  */
+const achievements = new Achievements(achievementsData);
+achievements.init();
 /* services  */
 /* job history  */
 /* work expertise  */
